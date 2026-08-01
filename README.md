@@ -6,7 +6,7 @@ by Framer Motion and GSAP, smooth scroll via Lenis..
 
 ## Tech stack
 
-- **Framework:** Next.js 15 (App Router), React 19, TypeScript
+- **Framework:** Next.js 15 (App Router), React 19, TypeScript..
 - **Styling:** Tailwind CSS (CSS variables for dark/light theming)
 - **Animation:** Framer Motion, GSAP, Lenis
 - **3D:** React Three Fiber / Three.js
