@@ -2,7 +2,7 @@
 
 A production-ready personal portfolio built with Next.js 15 (App Router), React 19,
 TypeScript, and Tailwind CSS. 3D hero built with React Three Fiber, motion handled
-by Framer Motion and GSAP, smooth scroll via Lenis.
+by Framer Motion and GSAP, smooth scroll via Lenis..
 
 ## Tech stack
 
