@@ -87,7 +87,7 @@ export function Hero() {
           <a data-hoverable href="#projects" className="magnetic bg-grad-accent text-white font-medium rounded-full px-7 py-3.5 text-sm">
             View Projects
           </a>
-          <a data-hoverable href={siteConfig.resumeUrl} className="magnetic border border-card-border rounded-full px-7 py-3.5 text-sm">
+          <a data-hoverable href={siteConfig.resumeUrl} download target="_blank" rel="noreferrer" className="magnetic border border-card-border rounded-full px-7 py-3.5 text-sm">
             Download Resume
           </a>
           <a data-hoverable href="#contact" className="magnetic border border-card-border rounded-full px-7 py-3.5 text-sm">

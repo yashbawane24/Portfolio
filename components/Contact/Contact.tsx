@@ -44,7 +44,7 @@ export function Contact() {
                 <button data-hoverable type="submit" className="magnetic bg-grad-accent text-white rounded-full px-7 py-3.5 text-sm font-medium">
                   {sent ? "Sent ✓" : "Send message"}
                 </button>
-                <a data-hoverable href={siteConfig.resumeUrl} className="magnetic border border-card-border rounded-full px-7 py-3.5 text-sm">
+                <a data-hoverable href={siteConfig.resumeUrl} download target="_blank" rel="noreferrer" className="magnetic border border-card-border rounded-full px-7 py-3.5 text-sm">
                   Download Resume
                 </a>
               </div>
