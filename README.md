@@ -83,7 +83,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git remote add origin <your-repo-url>
-git push -u origin main
+git push -u origin main...
 \`\`\`
 
 Then import the repo at [vercel.com/new](https://vercel.com/new).
