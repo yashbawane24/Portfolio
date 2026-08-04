@@ -2,11 +2,11 @@
 
 A production-ready personal portfolio built with Next.js 15 (App Router), React 19,
 TypeScript, and Tailwind CSS. 3D hero built with React Three Fiber, motion handled
-by Framer Motion and GSAP, smooth scroll via Lenis..
+by Framer Motion and GSAP, smooth scroll via Lenis.
 
 ## Tech stack
 
-- **Framework:** Next.js 15 (App Router), React 19, TypeScript..
+- **Framework:** Next.js 15 (App Router), React 19, TypeScript.
 - **Styling:** Tailwind CSS (CSS variables for dark/light theming)
 - **Animation:** Framer Motion, GSAP, Lenis
 - **3D:** React Three Fiber / Three.js
@@ -15,16 +15,16 @@ by Framer Motion and GSAP, smooth scroll via Lenis..
 
 ## Getting started
 
-\`\`\`bash
+```bash
 npm install
 npm run dev
-\`\`\`
+```
 
 Open [http://localhost:3000](http://localhost:3000).
 
 ## Project structure
 
-\`\`\`
+```
 app/                     Routes (App Router)
   page.tsx               Home — assembles all sections
   about/page.tsx          /about
@@ -49,7 +49,7 @@ constants/               All content — edit these, not the components
 hooks/                   useLenis, useMousePosition, useScrollProgress, useTypedText
 lib/utils.ts             cn() class-merging helper
 styles/globals.css       Tailwind directives + CSS custom properties for both themes
-\`\`\`
+```
 
 ## Editing content
 
@@ -78,12 +78,12 @@ persists the choice to `localStorage` automatically.
 
 Ready to deploy on Vercel with zero configuration:
 
-\`\`\`bash
+```bash
 git init
 git add .
 git commit -m "Initial commit"
 git remote add origin <your-repo-url>
-git push -u origin main...
-\`\`\`
+git push -u origin main
+```
 
 Then import the repo at [vercel.com/new](https://vercel.com/new).
