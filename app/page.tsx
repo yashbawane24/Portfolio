@@ -4,7 +4,6 @@ import { Skills } from "@/components/Skills/Skills";
 import { Projects } from "@/components/Projects/Projects";
 import { Experience } from "@/components/Experience/Experience";
 import { Services } from "@/components/Services/Services";
-import { Testimonials } from "@/components/Testimonials/Testimonials";
 import { Contact } from "@/components/Contact/Contact";
 
 export default function HomePage() {
@@ -16,7 +15,6 @@ export default function HomePage() {
       <Projects limit={4} />
       <Experience />
       <Services />
-      <Testimonials />
       <Contact />
     </>
   );
