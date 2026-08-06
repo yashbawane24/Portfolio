@@ -87,3 +87,7 @@ git push -u origin main
 ```
 
 Then import the repo at [vercel.com/new](https://vercel.com/new).
+
+---
+
+_Last updated: August 2026_
