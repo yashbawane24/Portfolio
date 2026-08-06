@@ -12,6 +12,7 @@ by Framer Motion and GSAP, smooth scroll via Lenis.
 - **3D:** React Three Fiber / Three.js
 - **Icons:** Lucide React
 - **Theme persistence:** next-themes (localStorage-backed)
+- **Typography:** Sora (display), Plus Jakarta Sans (body), JetBrains Mono (code)
 
 ## Getting started
 
