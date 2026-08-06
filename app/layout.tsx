@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { Sora, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "@/styles/globals.css";
 
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
@@ -11,12 +11,16 @@ import { Cursor } from "@/components/Cursor/Cursor";
 import { Background } from "@/components/Background/Background";
 import { siteConfig } from "@/constants/config";
 
-const spaceGrotesk = Space_Grotesk({
+const sora = Sora({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-sora",
   display: "swap",
 });
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  display: "swap",
+});
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
@@ -47,7 +51,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans font-light cursor-none md:cursor-none`}>
+      <body className={`${sora.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} font-sans font-light cursor-none md:cursor-none`}>
         <ThemeProvider>
           <SmoothScrollProvider>
             <Loader />
