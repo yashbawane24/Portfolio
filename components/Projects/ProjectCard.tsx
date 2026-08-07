@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import type { Project } from "@/constants/projects";
@@ -34,10 +35,19 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       }}
     >
       <Card className="h-full">
-        <div className="h-52 relative overflow-hidden bg-surface">
-          <div className="absolute inset-0 bg-grad-accent opacity-20 transition-transform duration-700 group-hover:scale-110" />
+        <div className="h-52 relative overflow-hidden bg-surface group">
+          {project.image && (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-85 group-hover:opacity-100"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/20 to-transparent z-0" />
           {project.featured && (
-            <span className="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-full bg-bg/80 border border-card-border">
+            <span className="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-full bg-bg/80 border border-card-border backdrop-blur-md z-10">
               Featured
             </span>
           )}

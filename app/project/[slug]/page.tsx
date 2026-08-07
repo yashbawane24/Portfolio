@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Github, ExternalLink, CheckCircle2 } from "lucide-react";
 import { projects, getProjectBySlug } from "@/constants/projects";
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
-    title: `${project.title} — Case Study`,
+    title: `${project.title} — Details`,
     description: project.summary,
   };
 }
@@ -44,10 +45,24 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <a data-hoverable href={project.githubUrl} target="_blank" rel="noreferrer" className="magnetic inline-flex items-center gap-2 border border-card-border rounded-full px-6 py-3 text-sm hover:border-accent1 transition-colors">
             <Github size={15} /> GitHub
           </a>
-          <a data-hoverable href={project.liveUrl} target="_blank" rel="noreferrer" className="magnetic inline-flex items-center gap-2 bg-grad-accent text-white rounded-full px-6 py-3 text-sm font-medium">
-            <ExternalLink size={15} /> Live Demo
-          </a>
+          {project.liveUrl && project.liveUrl !== "#" && (
+            <a data-hoverable href={project.liveUrl} target="_blank" rel="noreferrer" className="magnetic inline-flex items-center gap-2 bg-grad-accent text-white rounded-full px-6 py-3 text-sm font-medium">
+              <ExternalLink size={15} /> Live Demo
+            </a>
+          )}
         </div>
+
+        {project.image && (
+          <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden mb-12 border border-card-border">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+        )}
 
         <Card className="p-9 mb-10">
           <h2 className="text-xl mb-4">Overview</h2>
