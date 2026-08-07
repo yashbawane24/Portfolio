@@ -9,6 +9,7 @@ export interface Project {
   features: string[];
   githubUrl: string;
   liveUrl: string;
+  image: string;
 }
 
 export const projects: Project[] = [
@@ -31,6 +32,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/yashbawane24/AI-Website-Builder-.git",
     liveUrl: "#",
+    image: "/images/ai-website-builder.png",
   },
   {
     slug: "smart-grocery-delivery",
@@ -51,6 +53,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/yashbawane24/Smart-Grocery-Delivery-Platform.git",
     liveUrl: "#",
+    image: "/images/smart-grocery-delivery.png",
   },
   {
     slug: "secure-docs-ai",
@@ -70,6 +73,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/yashbawane24/SecureDocsAi.git",
     liveUrl: "#",
+    image: "/images/secure-docs-ai.png",
   },
   {
     slug: "farmer-assistance-system",
@@ -89,6 +93,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/yashbawane24/Farmer-assistance-system.git",
     liveUrl: "#",
+    image: "/images/farmer-assistance-system.png",
   },
 ];
 
