@@ -1,9 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { Github, ExternalLink, FileText } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import type { Project } from "@/constants/projects";
 import { Card } from "@/components/ui/Card";
 
@@ -57,12 +56,11 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
             <a data-hoverable href={project.githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-accent1 transition-colors">
               <Github size={14} /> GitHub
             </a>
-            <a data-hoverable href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-accent1 transition-colors">
-              <ExternalLink size={14} /> Live Demo
-            </a>
-            <Link data-hoverable href={`/project/${project.slug}`} className="flex items-center gap-1.5 hover:text-accent1 transition-colors">
-              <FileText size={14} /> Case Study
-            </Link>
+            {project.liveUrl && project.liveUrl !== "#" && (
+              <a data-hoverable href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-accent1 transition-colors">
+                <ExternalLink size={14} /> Live Demo
+              </a>
+            )}
           </div>
         </div>
       </Card>

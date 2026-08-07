@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "Responsive UI built with Tailwind CSS",
       "RESTful backend APIs with Express.js & PostgreSQL",
     ],
-    githubUrl: "https://github.com/yashbawane24",
+    githubUrl: "https://github.com/yashbawane24/AI-Website-Builder-.git",
     liveUrl: "#",
   },
   {
@@ -49,7 +49,45 @@ export const projects: Project[] = [
       "Automated email notifications & background job scheduling with Inngest",
       "PostgreSQL (Neon) database integration",
     ],
-    githubUrl: "https://github.com/yashbawane24",
+    githubUrl: "https://github.com/yashbawane24/Smart-Grocery-Delivery-Platform.git",
+    liveUrl: "#",
+  },
+  {
+    slug: "secure-docs-ai",
+    title: "SecureDocs AI",
+    summary:
+      "AI-powered document security and intelligent document analysis system with role-based access.",
+    description:
+      "Built an intelligent document processing and security platform featuring AI-assisted document analysis, document encryption, role-based access control, and intuitive search functionality. Implemented secure API endpoints, document parsing, and dynamic UI for managing document workflows.",
+    featured: true,
+    category: "AI",
+    tags: ["React", "Node.js", "Python", "AI API", "JWT Authentication", "Tailwind CSS", "PostgreSQL"],
+    features: [
+      "AI-powered intelligent document analysis & search",
+      "Secure document encryption & role-based access control",
+      "RESTful APIs for seamless document management",
+      "Responsive user interface with real-time updates",
+    ],
+    githubUrl: "https://github.com/yashbawane24/SecureDocsAi.git",
+    liveUrl: "#",
+  },
+  {
+    slug: "farmer-assistance-system",
+    title: "Smart Farmer Assistance System",
+    summary:
+      "AI-driven agriculture platform providing real-time crop recommendations, weather forecasting, and farm management.",
+    description:
+      "Developed a comprehensive agricultural assistance platform empowering farmers with AI-driven crop advisory, soil analysis recommendations, local weather integration, and marketplace features for farm produce. Designed with intuitive UI for accessible farm operations management.",
+    featured: true,
+    category: "Platform",
+    tags: ["React", "Python", "FastAPI", "Machine Learning", "Tailwind CSS", "Node.js", "REST APIs"],
+    features: [
+      "AI crop advisory & soil analysis recommendations",
+      "Real-time weather integration & alerts",
+      "Farm produce marketplace & inventory management",
+      "Intuitive multi-lingual dashboard for farmers",
+    ],
+    githubUrl: "https://github.com/yashbawane24/Farmer-assistance-system.git",
     liveUrl: "#",
   },
 ];

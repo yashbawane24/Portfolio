@@ -14,7 +14,7 @@ export function Projects({ limit }: { limit?: number }) {
         <SectionHeading
           eyebrow="Featured Work"
           title="Selected projects."
-          subtitle="AI-driven products and full-stack builds — each with a dedicated case study."
+          subtitle="AI-driven products and full-stack builds."
         />
         <div className="grid md:grid-cols-2 gap-6">
           {list.map((project, i) => (
